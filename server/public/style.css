@@ -28,7 +28,7 @@ html, body {
 }
 
 .content h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     text-align: center;
     color: blanchedalmond;
     font-size: 500%;
@@ -38,7 +38,7 @@ html, body {
 
 .content .form {
     border-radius: 9px;
-    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-family: 'Tahoma', sans-serif;
     color: blanchedalmond;
     font-size: 135%;
     padding: 10px 20px;
