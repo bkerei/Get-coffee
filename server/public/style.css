@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+    widows: 100%;
+    margin: auto;
+    background-image: url(https://www.incimages.com/uploaded_files/image/1940x900/getty_504333530_361153.jpg);
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 0;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 500%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content .form {
+    border-radius: 9px;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    color: blanchedalmond;
+    font-size: 135%;
+    padding: 10px 20px;
+}
