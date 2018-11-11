@@ -39,7 +39,7 @@ html, body {
 .content .form {
     border-radius: 9px;
     font-family: 'Tahoma', sans-serif;
-    color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     font-size: 135%;
     padding: 10px 20px;
 }
