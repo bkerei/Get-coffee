@@ -22,13 +22,11 @@ class Search extends Component {
     };
 
     // Initialize Google Autocomplete
-    /*global google*/ // To disable any eslint 'google not defined' errors
     this.autocomplete = new google.maps.places.Autocomplete(
       document.getElementById('autocomplete'),
       options,
     );
 
-    // Fire Event when a suggested name is selected
     this.autocomplete.addListener('place_changed', this.handlePlaceSelect);
   }
   
