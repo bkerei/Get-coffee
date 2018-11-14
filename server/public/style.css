@@ -4,25 +4,34 @@ html, body {
     height: 100%;
     width: 100%;
 }
+.gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    justify-items: center;
+}
+
 
 .intro {
     height: 100%;
     widows: 100%;
-    margin: auto;
+    margin: 0 auto;
     background-image: url(https://www.incimages.com/uploaded_files/image/1940x900/getty_504333530_361153.jpg);
     top: 0;
     background-size: cover;
+    display: grid;
+    justify-items: center;
+    grid-column: col 1 / span 12;
 }
 
 .intro .inner {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
-    max-width: 0;
+    /* max-width: 0; */
 }
 
 .content {
-    max-width: 500px;
+    max-width: 500px; 
     margin: 0 auto;
     text-align: center;
 }
@@ -39,6 +48,7 @@ html, body {
 .content .form {
     border-radius: 9px;
     font-family: 'Tahoma', sans-serif;
+    width: 200px;
     font-size: 135%;
     padding: 10px 20px;
     color: blanchedalmond;
