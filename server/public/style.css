@@ -8,6 +8,22 @@ html, body {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
     justify-items: center;
+
+    height: 100vh;
+}
+
+.theBackground{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: -999;
+
+    filter: opacity(0.9) blur(2px) brightness(0.3);
+    
+    background-image: url(https://www.incimages.com/uploaded_files/image/1940x900/getty_504333530_361153.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
 }
 
 
@@ -15,9 +31,7 @@ html, body {
     height: 100%;
     widows: 100%;
     margin: 0 auto;
-    background-image: url(https://www.incimages.com/uploaded_files/image/1940x900/getty_504333530_361153.jpg);
     top: 0;
-    background-size: cover;
     display: grid;
     justify-items: center;
     grid-column: col 1 / span 12;
@@ -41,14 +55,19 @@ html, body {
     text-align: center;
     color: blanchedalmond;
     font-size: 500%;
-    display: table-cell;
-    vertical-align: middle;
+
+    width: 500px;
+    height: 100px;
+
+    
+    
 }
 
 .content .form {
     border-radius: 9px;
     font-family: 'Tahoma', sans-serif;
-    width: 200px;
+    width: 500px;
+    margin: auto;
     font-size: 135%;
     padding: 10px 20px;
     color: blanchedalmond;
