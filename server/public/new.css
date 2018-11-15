@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    justify-items: left;
+
+    height: 100vh;
+}
+
+.theBackground{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: -999;
+
+    filter: opacity(0.9) blur(2px) brightness(0.3);
+    
+    background-image: url(https://www.incimages.com/uploaded_files/image/1940x900/getty_504333530_361153.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+
+.intro {
+    height: 100%;
+    widows: 100%;
+    margin: 0 auto;
+    top: 0;
+    display: grid;
+    justify-items: left;
+    grid-column: col 1 / span 12;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: left;
+    width: 100%;
+    /* max-width: 0; */
+}
+
+.content {
+    max-width: 500px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 500%;
+
+    width: 500px;
+    height: 100px;
+
+    
+    
+}
+
+.content .form {
+    border-radius: 9px;
+    font-family: 'Tahoma', sans-serif;
+    width: 500px;
+    margin: auto;
+    font-size: 135%;
+    padding: 10px 20px;
+    color: blanchedalmond;
+}
