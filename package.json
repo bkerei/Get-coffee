@@ -28,7 +28,14 @@
   "dependencies": {
     "@google/maps": "^0.5.5",
     "express": "^4.16.2",
-    "google-maps-react": "^2.0.2"
+    "google": "^2.1.0",
+    "google-map-react": "^1.1.0",
+    "google-maps-react": "^2.0.2",
+    "map": "^1.0.1",
+    "maps": "^0.3.3",
+    "react-load-script": "0.0.6",
+    "react-redux": "^5.0.7",
+    "superagent": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -39,7 +46,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.1.4",
-    "react": "^16.2.0",
+    "react": "^16.6.3",
     "react-dom": "^16.2.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
