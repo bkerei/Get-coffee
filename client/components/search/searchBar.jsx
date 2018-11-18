@@ -52,7 +52,7 @@ class Search extends Component {
     return (
       <div>
         <Script
-          url="https://maps.googleapis.com/maps/api/js?key=your_api_key&libraries=places"
+          url="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRi6CLYp7jh95IXaFzGBj-yy5D&libraries=places"
           onLoad={this.handleScriptLoad}
         />
         <SearchBar id="autocomplete" placeholder="" hintText="Search City" value={this.state.query}
