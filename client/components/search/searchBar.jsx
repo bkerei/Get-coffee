@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SearchBar from 'material-ui-search-bar';
+//import SearchBar from 'material-ui-search-bar';
 import Script from 'react-load-script';
 
 class Search extends Component {
@@ -55,15 +55,15 @@ class Search extends Component {
           url="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRi6CLYp7jh95IXaFzGBj-yy5D&libraries=places"
           onLoad={this.handleScriptLoad}
         />
-        <SearchBar id="autocomplete" placeholder="" hintText="Search City" value={this.state.query}
+        {/* <SearchBar id="autocomplete" placeholder="" hintText="Search City" value={this.state.query}
           style={{
             margin: '0 auto',
             maxWidth: 800,
           }}
-        />
+        /> */}
       </div>
     );
   }
 }
 
-export default SearchBy;
+export default Search;
