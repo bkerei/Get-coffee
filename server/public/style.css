@@ -1,0 +1,184 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.gridcontainer {
+    display: grid;
+
+    /* grid-template-columns: repeat(12, [col] 1fr);
+    justify-items: center; */
+
+    grid-template-areas: "sidebar header header header" 
+                        "sidebar cafe1 cafe2 cafe3"
+                        "sidebar cafe4 cafe5 cafe6"
+                    ;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2px;
+
+    height: 100vh;
+}
+
+
+
+.theTopHeader{
+    grid-area: header;
+    text-align: center;
+}
+
+.cafeAll{
+    height: 25vh;
+    margin: 20px;
+}
+.cafeTopImage{
+    height: 80%;
+}
+.cafeAddress{
+    height: 20%;
+}
+
+.cafeCss1{
+    grid-area: cafe1;
+    text-align: center;
+}
+.cafeCss2{
+    grid-area: cafe2;
+    text-align: center;
+}
+.cafeCss3{
+    grid-area: cafe3;
+    text-align: center;
+}
+.cafeCss4{
+    grid-area: cafe4;
+    text-align: center;
+}
+.cafeCss5{
+    grid-area: cafe5;
+    text-align: center;
+}
+.cafeCss6{
+    grid-area: cafe6;
+    text-align: center;
+}
+
+
+.somthingIdontKnow{
+
+    grid-area: sidebar;
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+.fillthatTHing{
+    height: 100%;
+}
+
+.theBackground{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: -999;
+
+    filter: opacity(0.9) blur(2px) brightness(0.3);
+    
+    background-image: url(https://www.incimages.com/uploaded_files/image/1940x900/getty_504333530_361153.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+
+.intro {
+    /* height: 100%;
+    widows: 100%;
+    margin: 0 auto;
+    top: 0; */
+
+    grid-area: content;
+    display: grid;
+    /* justify-items: center; */
+    /* grid-column: col 1 / span 12; */
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    /* max-width: 0; */
+}
+
+.content {
+    max-width: 500px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 500%;
+
+    width: 500px;
+    height: 100px;
+
+    
+    
+}
+
+.content .form {
+    border-radius: 9px;
+    font-family: 'Tahoma', sans-serif;
+    width: 500px;
+    margin: auto;
+    font-size: 135%;
+    padding: 10px 20px;
+    color: blanchedalmond;
+}
+
+.main-section{
+	padding:15px;
+	font-family: 'Tahoma', sans-serif;
+}
+.section{
+	border-radius:5px;
+	background-color:blanchedalmond;
+}
+.section .fa{
+	font-size:17px;
+	margin-right: 5px;
+}
+.section:hover,.section:hover.section img{
+	box-shadow:1px 2px 24px 0px #000;
+	transition:0.5s;
+}
+.section h1{
+	margin:0px;
+	font-size:25px;
+	color:#8B95A5;
+}
+.section p{
+	margin:0px;
+	font-weight:500;
+	margin-bottom:40px;
+	letter-spacing: 1px;
+}
+.section img{
+	width:20%;
+	/* height:20%; */
+	border-radius: 50%;
+	margin:20px 0px 10px 0px;
+}
+.user-detail{
+	background-color:#FCFDDB;
+	border-top:1px solid #d2d2d2;
+	padding: 5px 0px;
+	border-radius:0px 0px 5px 5px;
+}
+.user-detail h2{
+	font-size: 20px;
+	color:#a2a2a2;
+	font-weight:400;
+}
