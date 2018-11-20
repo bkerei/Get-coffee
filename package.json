@@ -1,4 +1,10 @@
 {
+  "name": "Get-coffee",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bkerei/Get-coffee.git",
+  "author": "Seriously James? <cs.clarke90@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
     "google-maps-react": "^2.0.2",
