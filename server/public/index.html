@@ -3,15 +3,194 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Roboto:400,900" rel="stylesheet">
-  <link rel="stylesheet" href="./main.css">
-  <title>Get Coffee!</title>
+  <title>GET COFFEE FTW!</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  <div id="app"></div>
 
+  <div class="theBackground"></div>
+
+  <div class="gridcontainer">
+
+    <div class="theTopHeader">
+      <h1>The Title part</h1>
+    </div>
+
+    <div class="cafeCss1 cafeAll">
+    <div class="section cafeTopImage">
+        <img src="./images/image-2.jpg">
+        <h1>Raglan Roast</h1>
+    </div>
+    <div class="cafeAddress">
+      <div class="row user-detail">
+        <div>
+            <h2><i class="fa fa-map-marker" aria-hidden="true"></i>40 Abel Smith St, Te Aro, Wellington 6011</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cafeCss2 cafeAll">
+      <div class="section cafeTopImage">
+        <img src="./images/image-3.png">
+        <h1>Fidels Cafe</h1>
+      </div>
+      <div class="cafeAddress">
+        <div class="row user-detail">
+          <div>
+            <h2><i class="fa fa-map-marker" aria-hidden="true"></i>234 Cuba St, Te Aro, Wellington 6011</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cafeCss3 cafeAll">
+        <div class="section cafeTopImage">
+            <img src="./images/image-6.JPG">
+            <h1>Marthas Pantry</h1>
+        </div>
+        <div class="cafeAddress">
+          <div class="row user-detail">
+            <div>
+                <h2><i class="fa fa-map-marker" aria-hidden="true"></i>276 Cuba St, Te Aro, Wellington 6011</h2>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="cafeCss4 cafeAll">
+        <div class="section cafeTopImage">
+          <img src="./images/image-1.PNG">
+          <h1>Your Cafe here</h1>
+        </div>
+        <div class="cafeAddress">
+          <div class="row user-detail">
+            <div>
+              <h2><i class="fa fa-map-marker" aria-hidden="true"></i>** Cuba St, Te Aro, Wellington 6011</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cafeCss5 cafeAll">
+          <div class="section cafeTopImage">
+              <img src="./images/image-5.jpg">
+              <h1>Emporio Coffee</h1>
+          </div>
+          <div class="cafeAddress">
+            <div class="row user-detail">
+              <div>
+                  <h2><i class="fa fa-map-marker" aria-hidden="true"></i>90 Abel Smith St, Te Aro, Wellington 6011</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="cafeCss6 cafeAll">
+        <div class="section cafeTopImage">
+            <img src="./images/image-4.jpg">
+          <h1>RetroGrove</h1>
+        </div>
+        <div class="cafeAddress">
+          <div class="row user-detail">
+            <div>
+                <h2><i class="fa fa-map-marker" aria-hidden="true"></i> 275 Cuba St, Te Aro, Wellington 6011</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="somthingIdontKnow">
+        <form action="#">
+        <fieldset class="fillthatTHing">
+          Where you at?<br>
+          <input type="text" name="location" value="Enter your location here"><br>
+          <!-- <br>What would you like?<br>
+          <select name="Coffee">
+            <option value="Coffee">Choose Wisely...</option>
+            <option value="Coffee">Flat white</option>
+            <option value="Coffee">Black</option>
+            <option value="Coffee">Latte</option>
+            <option value="Coffee">Cappacino</option>
+            <option value="Coffee">Iced Coffee</option>
+            <option value="Coffee">Something fancy!</option>
+            <option value="Coffee">Just Coffee, all the coffee!</option>
+          </select><br>
+          <br>Budget?<br>
+          <select name="Budget">
+            <option value="Budget">Choose Wisely...</option>
+            <option value="Budget">Less than $5.00</option>
+            <option value="Budget">Between $5.00 - $10.00</option>
+            <option value="Budget">No budget here, give me everything!</option>
+          </select><br>
+          <br>Bringing your own mug?<br>
+          <input type="radio" name="mug" value="yes" checked> Yeah<br>
+          <input type="radio" name="mug" value="no"> Nah<br>
+          <br> -->
+          <input type="submit" value="Find that coffee!">
+        </fieldset>
+      </form>
+      <div id="googleMap" style="width:100%;height:400px;"></div> 
+
+      <script>
+         function myMap() { 
+          var mapProp = {
+            center: new google.maps.LatLng(-41.28664, 174.77557),
+
+            zoom: 15,
+          };
+          var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+
+          let anArray = [
+              {lat:-41.2959071, lon:174.7739487},
+              {lat:-41.2923298, lon:174.7636743},
+              {lat:-41.2960219, lon:174.7753594},
+              {lat:-41.2970389, lon:174.77404,},
+              {lat:-41.2965243, lon:174.774142,},
+              {lat:-41.2962108, lon:174.7733435,}
+            ]
+
+          //Adds all the markers in anArray
+          anArray.forEach( (item) => {
+            let markerPosition = new google.maps.LatLng(item.lat, item.lon);
+
+            var marker = new google.maps.Marker({position: markerPosition});
+
+            marker.setMap(map);
+          })
+
+        } 
+      </script>
+
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYfZ1__s4tigWtGAO1qc4ALv2zg7TggGI&callback=myMap" />
+
+
+      </div>
+
+    <section class="intro">
+      <div class="inner">
+        <div class="content">
+          <h1 class="big-title">Get Coffee!!</h1>
+          <br>
+          <div class="form">
+            
+            <br />
+            
+
+           
+            
+
+            </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</div>
   <script src="bundle.js"></script>
 </body>
 

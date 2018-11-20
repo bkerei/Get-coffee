@@ -47,7 +47,9 @@ export class CurrentLocation extends React.Component {
   }
 
   loadMap() {
+    console.log("attempt to load map")
     if (this.props && this.props.google) {
+      console.log("Yes i should load map")
       // checks if google is available
       const { google } = this.props;
       const maps = google.maps;
@@ -88,6 +90,7 @@ export class CurrentLocation extends React.Component {
   renderChildren() {
     const { children } = this.props;
 
+
     if (!children) return;
 
     return React.Children.map(children, c => {
@@ -107,8 +110,9 @@ export class CurrentLocation extends React.Component {
       <div>
         <div style={style} ref="map">
           Loading map...
+                
         </div>
-        {this.renderChildren()}
+        {/* {this.renderChildren()} */}
       </div>
     );
   }
@@ -125,4 +129,4 @@ CurrentLocation.defaultProps = {
   visible: true
 };
 
-export default map;
+//export default map;
