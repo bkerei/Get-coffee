@@ -1,29 +1,12 @@
- {"name": "Get-coffee",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/bkerei/Get-coffee.git",
-  "author": "Seriously James? <cs.clarke90@gmail.com>",
-  "license": "MIT",
-  "scripts": {	
-    "start": "webpack && node server",	
-    "dev": "node server & webpack --watch",	
-    "test": "jest --watchAll"	
-  },
+{
   "dependencies": {
+    "babel": "^6.23.0",
     "express": "^4.16.4",
-    "google-maps-react": "^2.0.2",
+    "google": "^2.1.0",
+    "jest": "^23.6.0",
+    "maps": "^0.3.3",
     "react": "^16.6.3",
-    "babel-core": "^6.26.0",	
-    "babel-loader": "^7.1.2",	
-    "babel-plugin-transform-class-properties": "^6.24.1",	
-    "babel-preset-env": "^1.6.1",	
-    "babel-preset-react": "^6.24.1",	
-    "enzyme": "^3.3.0",	
-    "enzyme-adapter-react-16": "^1.1.1",	
-    "jest": "^22.1.4",	
-    "react": "^16.6.3",	
-    "react-dom": "^16.2.0",	
-    "webpack": "^3.10.0",	
-    "webpack-dev-server": "^3.1.10"	
+    "superagent": "^4.0.0",
+    "webpack": "^4.26.0"
   }
-  }
+}
