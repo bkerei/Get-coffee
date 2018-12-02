@@ -8,5 +8,11 @@
     "react": "^16.6.3",
     "superagent": "^4.0.0",
     "webpack": "^4.26.0"
+  },
+
+  "scripts": {
+    "dev": "nodemon server & webpack --watch",
+    "start": "webpack && node server",
+    "knex": "knex"
   }
 }

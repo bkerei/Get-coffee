@@ -134,6 +134,9 @@
           var markers = [];
           // Listen for the event fired when the user selects a prediction and retrieve
           searchBox.addListener('places_changed', function () {
+
+							console.log('How are you?')
+
             var places = searchBox.getPlaces();
 
             if (places.length == 0) {
@@ -170,8 +173,14 @@
               }));
 
               if (place.geometry.viewport) {
+
+									console.log('I good')
+
                 bounds.union(place.geometry.viewport);
               } else {
+
+								console.log('yeah you are')
+
                 bounds.extend(place.geometry.location);
               }
             });
@@ -189,13 +198,19 @@
             ]
           //Adds all the markers in anArray
           anArray.forEach( (item) => {
+
+						console.log('what you mena bro')
+
             let markerPosition = new google.maps.LatLng(item.lat, item.lon);
             var marker = new google.maps.Marker({position: markerPosition});
             marker.setMap(map);
           })
-
+				//Comment out see what happens
           var rad = function(x) {
-  return x * Math.PI / 180;
+
+						console.log('you wannafight about it')
+
+  				return x * Math.PI / 180;
 };
 
 measureTool = new MeasureTool(map, {
